@@ -25,11 +25,11 @@ async function page() {
             </h1>
 
             <h2 className=' mt-4 text-center text-base text-muted-foreground'>
-                Let's get started by setting up your currency.
+                Let &apos;s get started by setting up your currency.
             </h2>
 
             <h3 className=' mt-2 text-center text-sm text-muted-foreground '>
-                Don't worry, you can change these settings at any time.
+                Don &apos;t worry, you can change these settings at any time.
             </h3>
         </div>
         <Separator/>
