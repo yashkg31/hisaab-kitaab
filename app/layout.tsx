@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script"
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
@@ -25,6 +26,18 @@ export default function RootLayout({
           colorScheme: 'dark'
          }}
       >
+        <head>
+          <Script async src="https://www.googletagmanager.com/gtag/js?id=G-7XPZY0V15C"></Script>
+          <Script id="google-analytics">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            
+              gtag('config', 'G-7XPZY0V15C');
+            `}
+          </Script>
+        </head>
         <body className={inter.className}>
           <Toaster richColors position="bottom-right" />
             <RootProviders>
